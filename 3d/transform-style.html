@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .cena{
+            border: 2px solid #ccc;
+            width: 300px;
+            aspect-ratio: 1;
+        }
+
+        .plano{
+            background-color: rgb(0 0 0 / .3);
+            width: 200px;
+            aspect-ratio: 1;
+        }
+
+        #cena1{
+            perspective: 500px;
+        }
+
+        .cena1a {
+            transform: rotateY(25deg);
+            transform-style: preserve-3d;
+        }   
+
+        .cena1b{
+            transform: rotateX(55deg);
+        }
+
+    </style>
+
+</head>
+<body>
+    <div id="cena1" class="cena">
+        <div class="cena1a plano">
+            <div class="cena1b plano">cena 1 B</div>
+        </div>
+    </div>
+</body>
+</html>

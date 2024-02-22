@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Form Contato</title>
+    <link rel="stylesheet" href="/assets/style.css">
+</head>
+<body>
+    <form action="#" method="post" autocomplete="off">
+        <fieldset>
+            <legend>Formulário de contato</legend>
+            <label for="name">
+                Seu nome
+            </label>
+            <input class="valid" type="text" id="name" required placeholder="Digite seu nome">
+            <label for="email">
+                Email
+            </label>
+            <input class="valid" type="email" id="email" required placeholder="teste@mail.com">
+            <label for="assunto">
+                Assunto
+            </label>
+            <input class="valid" type="text" id="assunto">
+            <label for="text_area">
+                Mensagem
+            </label>
+            <textarea class="valid" id="text_area" cols="10" rows="5" minlength="20" required placeholder="Conte-nos tudo"></textarea>
+            <button type="submit" class="btn">Enviar</button>
+        </fieldset>
+    </form>
+</body>
+</html>

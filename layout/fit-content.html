@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Fit content</title>
+    <style>
+        .container{
+            border: 2px solid black;
+            padding: 16px;
+            width: 300px;
+            margin-bottom: 16px;
+        }
+        .item{
+            background-color: blueviolet;
+            margin-bottom: 10px;
+            padding: 5px;
+        }
+        .fit-content .item{
+            width: fit-content;
+        }
+        .min-content .item{
+            width: min-content;
+        }
+        .max-content .item{
+            width: max-content;
+        }
+    </style>
+</head>
+<body>
+    <div class="container fit-content">
+        <div class="item">lorem</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, assumenda.</div>
+        <div class="item">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae, vel repudiandae mollitia odit dignissimos ea facilis tenetur, nisi aspernatur repellendus quidem sed error pariatur. Quas.</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam quod saepe enim eligendi, perferendis aliquid quas nisi quos voluptatum, perspiciatis non debitis cumque sint consequuntur excepturi quia ducimus iste quisquam quibusdam temporibus corrupti doloremque. Quaerat accusamus nemo ipsa. Laborum temporibus hic facilis deleniti? Repellendus, vero eligendi magnam voluptates voluptatum doloremque adipisci sequi ipsum quisquam culpa? Optio beatae repudiandae earum blanditiis sapiente sit vero, eius incidunt esse repellat, ut, fugit similique repellendus! Accusamus corrupti incidunt esse.</div>
+    </div>
+    <div class="container min-content">
+        <div class="item">lorem</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, assumenda.</div>
+        <div class="item">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae, vel repudiandae mollitia odit dignissimos ea facilis tenetur, nisi aspernatur repellendus quidem sed error pariatur. Quas.</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam quod saepe enim eligendi, perferendis aliquid quas nisi quos voluptatum, perspiciatis non debitis cumque sint consequuntur excepturi quia ducimus iste quisquam quibusdam temporibus corrupti doloremque. Quaerat accusamus nemo ipsa. Laborum temporibus hic facilis deleniti? Repellendus, vero eligendi magnam voluptates voluptatum doloremque adipisci sequi ipsum quisquam culpa? Optio beatae repudiandae earum blanditiis sapiente sit vero, eius incidunt esse repellat, ut, fugit similique repellendus! Accusamus corrupti incidunt esse.</div>
+    </div>
+    <div class="container max-content">
+        <div class="item">lorem</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, assumenda.</div>
+        <div class="item">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae, vel repudiandae mollitia odit dignissimos ea facilis tenetur, nisi aspernatur repellendus quidem sed error pariatur. Quas.</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam quod saepe enim eligendi, perferendis aliquid quas nisi quos voluptatum, perspiciatis non debitis cumque sint consequuntur excepturi quia ducimus iste quisquam quibusdam temporibus corrupti doloremque. Quaerat accusamus nemo ipsa. Laborum temporibus hic facilis deleniti? Repellendus, vero eligendi magnam voluptates voluptatum doloremque adipisci sequi ipsum quisquam culpa? Optio beatae repudiandae earum blanditiis sapiente sit vero, eius incidunt esse repellat, ut, fugit similique repellendus! Accusamus corrupti incidunt esse.</div>
+    </div>
+</body>
+</html>

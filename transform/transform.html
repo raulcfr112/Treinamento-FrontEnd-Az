@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Transform</title>
+    <style>
+        div{
+            outline: 1px solid #888;
+            width: 200px;
+            margin: .5em auto;
+        }
+        p{
+            width: 50%;
+        }
+        .destaque{
+            background-color: yellow;
+        }
+        .div1 .destaque{
+            transform: translate(90%);
+        }
+        .div2 .destaque{
+            position: relative;
+            top: -50px;
+            left: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="div1">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, cupiditate?</p>
+        <p class="destaque">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, cupiditate?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, cupiditate?</p>
+    </div>
+    <div class="div2">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, cupiditate?</p>
+        <p class="destaque">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, cupiditate?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, cupiditate?</p>
+    </div>
+</body>
+</html>

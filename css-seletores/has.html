@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Has</title>
+    <style>
+        p a{
+            color: red;
+            background-color: yellow;
+        }
+
+        p:has(.teste){
+            background-color: #ccc;
+        }
+
+        table{
+            border-collapse: collapse;
+            width: 100%;
+            margin-bottom: 24px;
+        }
+        th, td{
+            border-bottom: 1px solid #ddd;
+            padding: .5em;
+        }
+        th{
+            background-color: #f2f2f2;
+            text-align: left;
+        }
+
+        tr:nth-child(even){
+            background-color: #f9f9f9;
+        }
+        tr:nth-child(odd){
+            background-color: white;
+        }
+
+        tr:hover{
+            background-color: #e9e9e9;
+        }
+
+        tr:has(td:first-child input[type="checkbox"]:checked){
+            background-color: yellow;;
+        }
+
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <th></th>
+            <th>Nome</th>
+            <th>Email</th>
+        </tr>
+        <tr>
+            <td><input type="checkbox"></td>
+            <td>John Doe</td>
+            <td>johndoe@example.com</td>
+        </tr>
+        <tr>
+            <td><input type="checkbox"></td>
+            <td>Jane Smith</td>
+            <td>janesmith@example.com</td>
+        </tr>
+        <tr>
+            <td><input type="checkbox"></td>
+            <td>Michael Johnson</td>
+            <td>michaeljohnson@example.com</td>
+        </tr>
+        <tr>
+            <td><input type="checkbox"></td>
+            <td>Sarah Williams</td>
+            <td>sarahwilliams@example.com</td>
+        </tr>
+        <tr>
+            <td><input type="checkbox"></td>
+            <td>David Brown</td>
+            <td>davidbrown@example.com</td>
+        </tr>
+    </table>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <a href="#">click aqui </a>Dicta, iste.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <a href="#" class="teste">click aqui para saber mais </a>Dicta, iste.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, iste.</p>
+
+</body>
+</html>

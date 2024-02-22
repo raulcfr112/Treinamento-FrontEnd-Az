@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Clip-Path</title>
+</head>
+
+    <style>
+
+        body{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: brown;
+            margin-bottom: 50vh;
+        }
+
+        .card-h2{
+            margin: 0;
+            font-weight: lighter;
+        }
+
+        .card-1{
+            width: 300px;
+            padding: 40px 30px 30px 50px;
+            box-sizing: border-box;
+            position: relative;
+            background-color: white;
+        }
+
+        .card-1::before{
+            content: "";
+            display: block;
+            width: 34px;
+            height: 34px;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        .exemplo{
+            width: 0;
+            height: 0;
+            border-top: 15px solid black;
+            border-right: 15px solid transparent;
+            margin-top: 30px;
+        }
+
+        .clippath > div{
+            width: 300px;
+            height: 300px;
+            margin-top: 30px;
+            background-image: repeating-linear-gradient(45deg, yellow  10%, orange 20%);
+        }
+
+        #d1{
+            clip-path: polygon(0% 0%, 100% 0%, 0% 100%, 20% 50%);
+        }
+
+        #d2{
+            clip-path: circle(50% at center);
+        }
+
+        #d3{
+            clip-path: ellipse(50% 25% at center);
+        }
+
+        #d4{
+            clip-path: inset(20px 30px 40px 50px);
+        }
+
+        #d5{
+            clip-path: inset(30px round 20px);
+        }
+
+    </style>
+
+<body>
+    <article class="card-1">
+        <h2 class="card-h2">Lorem, ipsum dolor.</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur iure nulla ea illum ab! Nobis cum porro ullam assumenda quos?</p>
+    </article>
+    <div class="exemplo"></div>
+
+    <section class="clippath">
+        <div id="d1"></div>
+        <div id="d2"></div>
+        <div id="d3"></div>
+        <div id="d4"></div>
+        <div id="d5"></div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,34 @@
+body{
+    background-color: aquamarine;
+}
+h1 {
+    color:blue;
+    font-family: 'Times New Roman', Times, serif, Helvetica, sans-serif;
+    font-size: 90px;
+    text-align: center;
+}
+h2 {
+    font-size: 40px;
+    font-style:italic;
+    text-transform: capitalize;
+    text-align: center;
+    text-decoration: underline;
+    background-color: cyan;
+}
+p {
+    color: rgb(0, 0, 0);
+    font-size: 28px;
+    text-align: left;
+    text-indent: 10px;
+    font-variant: small-caps;
+}
+a {
+    text-decoration: none;
+}
+.destaque{
+    color: green;
+    font-weight: bold;
+}
+#titulo2{
+    color:#0000ff
+}

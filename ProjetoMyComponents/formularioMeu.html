@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+
+    <title>Projeto My Components</title>
+
+    <link rel="stylesheet" href="/css/normalize.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+
+  <body>
+    <header class="main-header">
+      <nav class="main-nav">
+        <a href="#">
+          <img src="/imagens/perfil.png" alt="Raul" class="perfil-img" />
+        </a>
+
+        <ul class="ul-nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="tipografia.html">Tipografia</a></li>
+          <li><a href="cards.html">Cards</a></li>
+          <li><a href="listas.html">Listas</a></li>
+          <li><a href="formulario.html">Formulário</a></li>
+          <li><a href="botoes.html">Botões</a></li>
+          <li><a href="tabelas.html">Tabelas</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="main">
+      <h1>My Components</h1>
+
+      <h2>Entre em contato</h2>
+
+      <section>
+        <div class="row">
+          <form action="#" method="get">
+            <fieldset>
+              <div class="contact-container">
+                <label for="name">
+                  Nome
+                  <input
+                    type="text"
+                    id="name"
+                    placeholder="nome completo"
+                    required
+                  />
+                </label>
+                <label for="email">
+                  Email
+                  <input type="email" id="email" required />
+                </label>
+              </div>
+              Digite sua mensagem
+              <textarea name="msg" id="user-msg" cols="30" rows="10">
+              </textarea>
+              <button type="submit">Enviar</button>
+            </fieldset>
+          </form>
+          <address>
+            <p>
+              <b>Endereço</b> 1234 Somewhere Rd. Nashville, TN 00000 United
+              States
+            </p>
+            <p><b>Telefone</b> 000-000-000</p>
+            <p><b>Email</b> email@server.com</p>
+          </address>
+        </div>
+      </section>
+      <section>
+        <h2>Quiz</h2>
+        <div class="quiz-div">
+          <form action="#" method="get" class="quiz-form">
+            <p for="">Qual é sua linguagem preferida?</p>
+            <select name="linguagem" id="fav-language" required>
+              <option value="">Selecione</option>
+              <option value="">HTML</option>
+              <option value="">CSS</option>
+              <option value="">JS</option>
+            </select>
+            <label
+              >Baixa Prioridade
+              <input type="radio" name="radio" id="radio-check" />
+            </label>
+            <label
+              >Média Prioridade
+              <input type="radio" name="radio" id="radio-check" />
+            </label>
+            <label
+              >Alta Prioridade
+              <input type="radio" name="radio" id="radio-check" />
+            </label>
+            <label for="">
+              <input type="checkbox" name="check" id="check" />Envie-me uma
+              cópia
+            </label>
+            <label for="">
+              <input type="checkbox" name="check" id="check" required/>Sou um humano
+            </label>
+            <div class="quiz-buttons">
+              <input type="reset" value="Limpar" class="btn-limpar" />
+              <input type="submit" class="btn-enviar" />
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

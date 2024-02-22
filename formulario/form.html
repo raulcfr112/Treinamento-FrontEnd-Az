@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulário</title>
+</head>
+<body>
+    <form action="">
+        <fieldset>
+            <legend>Introdução</legend>
+            <label for="email">Email</label>
+            <input type="email" name="Email" id="email" required>
+            <br>
+            <br>
+            <label for="filhos">Quantidade de filhos</label>
+            <input type="number" name="" id="filhos" min="0" max="1000">
+            <input type="date" name="" id="" min="2022-01-15" max="2022-12-15">
+            <br>
+            <br>
+            Possui atividade extra?
+            <label>
+                <input type="radio" name="atividade" value="s">Sim
+            </label>
+            <label>
+                <input type="radio" name="atividade" value="n">Não
+            </label>
+            
+        </fieldset>
+        <fieldset>
+            <legend>Área de interesse</legend>
+            <label>
+                <input type="checkbox" name="interesse" value="html">HTML
+            </label>
+            <label>
+                <input type="checkbox" name="interesse" value="css">CSS
+            </label>
+            <label >
+                <input type="checkbox" name="interesse" value="js">JS
+            </label>
+            <label >
+                <input type="checkbox" name="interesse" value="python">Python
+            </label>
+            <label>
+                <input type="checkbox" name="interesse" value="java">Java
+            </label>
+
+            <br><br>
+            <label>
+                Escolha uma
+                <br>
+                <select name="linguagem" id="" required>
+                    
+                    <option value="">Escolha uma linguagem</option>
+
+                    <optgroup label="Frontend">
+                        <option value="html">html</option>
+                    <option value="css">csss</option>
+                    </optgroup>
+                   
+                    <optgroup label="backend">   
+                        <option value="java">java</option>
+                    </optgroup>
+                </select>
+
+
+            </label>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Mensagem</legend>
+            <textarea name="msg" cols="30" rows="10"></textarea>
+        </fieldset>
+
+        <br>
+        <br>
+        <input type="submit" value="Mandar">
+    </form>
+</body>
+</html>

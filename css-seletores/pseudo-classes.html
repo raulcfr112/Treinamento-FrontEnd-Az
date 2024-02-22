@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pseudo-classes</title>
+
+    <style>
+        button{
+            background-color: #6b6767;
+            color: white;
+            border: none;
+            padding: 1em;
+            margin-bottom: .5em;
+        }
+        button:disabled{
+            opacity: .5;
+        }
+        p:empty::before{
+            content: "paragrafo vazio??";
+        }
+        a:hover, a:focus{
+            background-color: yellow;
+        }
+        input[type="text"]:read-write{
+            background-color: #999;
+            border: none;
+            padding: .5em;
+        }
+        input[type="text"]:read-only{
+            background-color: yellow;
+        }
+        input[type="text"]:disabled{
+            background-color: white;
+        }
+        input[type="text"]::placeholder{
+            color: white;
+        }
+        input[type="text"]:placeholder-shown{
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <button>Vai</button><br>
+    <button disabled>Vai disabled</button>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, in.</p>
+    <p> </p>
+    <p></p>
+
+    <ul>
+        <li><a href="#">Link falso</a></li>
+        <li><a href="#">Link falso</a></li>
+        <li><a href="#">Link falso</a></li>
+        <li><a href="#">Link falso</a></li>
+    </ul>
+    <p tabindex="0">Lorem ipsum dolor sit amet.</p>
+    <p tabindex="0">Lorem ipsum dolor sit amet.</p>
+    <p tabindex="0">Lorem ipsum dolor sit amet.</p>
+    <p tabindex="0">Lorem ipsum dolor sit amet.</p>
+    <p tabindex="0">Lorem ipsum dolor sit amet.</p>
+
+    <form action="# ">
+        <input type="text" value="Valor Inicial" name="" id=""><br><br>
+        <input type="text" value="valor" disabled name="" id=""><br><br>
+        <input type="text" value="valor" readonly name="" id=""><br><br>
+        <input type="text" placeholder="valor" id=""><br><br>
+    </form>
+    </body>
+</html>

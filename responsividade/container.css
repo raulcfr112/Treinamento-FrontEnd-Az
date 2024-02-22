@@ -1,0 +1,83 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.card {
+  border: 2px solid #999;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-header img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  max-height: 10em;
+  object-fit: cover;
+  object-position: center;
+}
+
+.card-body {
+  padding: 1em;
+  box-sizing: border-box;
+  background-color: #ccc;
+  flex-grow: 1;
+}
+
+.card-btn {
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: darkslategray;
+  padding: 0.75em 1em;
+  color: white;
+  display: inline-block;
+}
+
+.card-body p {
+  margin: 0 0 1em;
+}
+
+.card-header {
+}
+
+.cards-container {
+  display: flex;
+  gap: 1em;
+  flex-direction: column;
+}
+
+/* .card-wrapper,
+main {
+  container-type: inline-size;
+} */
+
+.card-wrapper{
+    /* container-name: cardWrapper; */
+    container: cardWrapper / inline-size;
+}
+
+main{
+    /* container-name: main; */
+    container: main / inline-size;
+}
+
+/* @media screen and (min-width: 37.5em){ */
+@container cardWrapper (min-width: 37.5em) {
+  .card {
+    flex-direction: row;
+  }
+
+  .card-header img {
+    max-height: initial;
+  }
+}
+
+@container main (min-width: 60em) {
+  .cards-container {
+    flex-direction: row;
+  }
+
+  .card-wrapper {
+    flex-grow: 1;
+  }
+}

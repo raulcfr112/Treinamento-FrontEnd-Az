@@ -1,0 +1,111 @@
+html,body{
+    font-family: 'Montserrat', sans-serif;
+    width: 100vw;
+    min-height: 100vh;
+    margin: 0;
+}
+
+body {
+    background-image: radial-gradient(ellipse at 0 0, #fff8ce, #ffb61d);
+    padding: 3em 4em 0 4em;
+    box-sizing: border-box;
+}
+
+h1{
+    font-size: 4em;
+}
+
+h1 strong{
+    color: brown;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+p{
+    font-weight: 300;
+}
+
+form{
+    display: flex;
+    gap: 1rem;
+}
+
+main{
+    display: flex;
+    gap: 3em;
+}
+
+.upper{
+    text-transform: uppercase;
+}
+
+.form-text{
+    padding: 1em;
+    background-color: transparent;
+    border: 1px solid #031D44;
+    border-radius: 5px;
+}
+
+.form-text::placeholder{
+    color: black;
+}
+
+.form-btn{
+    padding: 1em;
+    border-radius: 5px;
+    border: 1px solid #031D44;
+    background-color: #031D44;
+    color: white;
+    font-family: inherit; 
+}
+
+
+main img:nth-child(1){
+    position: absolute;
+    top: 15em;
+    right: 30em;
+    z-index: -1;
+    animation: flutuar 2.5s infinite alternate-reverse;
+}
+
+main img:nth-child(2){
+    position: absolute;
+    top: 10em;
+    right: 2em;
+    z-index: -1;
+    animation: flutuar 2s infinite alternate-reverse;
+}
+
+main img:nth-child(3){
+    animation: flutuar 5s infinite alternate-reverse;
+}
+
+main img:nth-child(4){
+    position: absolute;
+    top: 28em;
+    right: 23em;
+    animation: flutuar 2s infinite alternate-reverse;
+}
+
+main img:nth-child(5){
+    position: absolute;
+    top: -1em;
+    right: 20em;
+    animation: flutuar 4s infinite alternate-reverse;
+}
+
+main img:nth-child(6){
+    position: absolute;
+    top: 30em;
+    right: 10em;
+    animation: flutuar 3s infinite alternate-reverse;
+}
+
+@keyframes flutuar{
+    0%{
+        transform: translate(0, 0);
+    }
+    100%{
+        transform: translate(3px, 20px);
+    }
+}
