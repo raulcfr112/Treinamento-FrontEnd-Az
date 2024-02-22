@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media</title>
+</head>
+<body>
+    <h1>Aluno</h1>
+    <h2 id="nomeAluno"></h2>
+    <hr>
+    <h3>Notas:</h3>
+    <ol id="listaNotas">
+    </ol>
+    <h3>Media:</h3>
+    <p id="media"></p>
+    <h3>Aprovado?</h3>
+    <p id="isApproved"></p>
+
+    <script>
+        const aluno ={
+            nome: "Raul",
+            notas: [10, 10, 10, 10]
+        }
+
+        const nomeAluno = document.getElementById("nomeAluno")
+        const listaNotas = document.getElementById("listaNotas")
+        const media = document.getElementById("media")
+        const isApproved = document.getElementById("isApproved")
+
+        nomeAluno.innerHTML = aluno.nome
+
+        for (let i = 0; i < aluno.notas.length; i++) {
+            listaNotas.innerHTML += `<li>${aluno.notas[i]}</li>`
+        }
+
+        let soma =0
+        for (let i = 0; i < aluno.notas.length; i++) {
+            soma += aluno.notas[i]
+        }
+
+        media.innerHTML = soma / aluno.notas.length
+
+        if(parseInt(document.getElementById("media").textContent) >= 7){
+            isApproved.innerHTML = "Aprovado!"
+        }else{
+            isApproved.innerHTML = "Reprovado!"
+        }
+        
+    </script>
+
+</body>
+</html>

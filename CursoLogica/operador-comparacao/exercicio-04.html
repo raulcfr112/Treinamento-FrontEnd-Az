@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ex 4</title>
+</head>
+<body>
+<h1>Quantidade de pares</h1>
+<script>
+    let dado1 = 0;
+    let dado2 = 0;
+    let countPar = 0;
+    let countquantidade = 0;
+
+    do {
+        let dado1 = Math.floor(Math.random() * 6) + 1;
+        let dado2 = Math.floor(Math.random() * 6) + 1;
+    document.write(dado1 + " | " + dado2 + "<br>")
+        if (((dado1 + dado2) % 2) === 0){
+            countPar++;
+        }
+        countquantidade++
+        document.write(countquantidade + " vezes que deu par: " + countPar + "<br>")
+    }   while (countPar < 10)
+
+    console.log("A quantidade de vezes jogadas foi: " + countquantidade)
+
+</script>
+</body>
+</html>

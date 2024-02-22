@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae laudantium nobis asperiores, eaque iure tempora placeat laboriosam tempore nostrum maxime mollitia consequatur eos labore, odio eligendi, dolorum ut inventore illum.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae laudantium nobis asperiores, eaque iure tempora placeat laboriosam tempore nostrum maxime mollitia consequatur eos labore, odio eligendi, dolorum ut inventore illum.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae laudantium nobis asperiores, eaque iure tempora placeat laboriosam tempore nostrum maxime mollitia consequatur eos labore, odio eligendi, dolorum ut inventore illum.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae laudantium nobis asperiores, eaque iure tempora placeat laboriosam tempore nostrum maxime mollitia consequatur eos labore, odio eligendi, dolorum ut inventore illum.</p>
+
+    <script>
+        const arr1 = new Array(1,2,3)
+        console.log(arr1)
+        
+        const arr3 = Array.of(3)
+        console.log(arr3)
+
+        const arr2 = Array.from(arr1)
+        arr2.push(4,5)
+        console.log(arr2)
+
+        let paragrafos = document.querySelectorAll("p")
+        console.log(paragrafos)
+
+        paragrafos = Array.from(paragrafos)
+
+        paragrafos.map( (p,i) => {
+            p.textContent = `${++i} - ${p.textContent}`
+        })
+
+        
+    </script>
+</body>
+</html>

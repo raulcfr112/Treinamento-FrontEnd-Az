@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Desafios</title>
+  </head>
+  <body>
+    <script>
+      function somar(n1, n2) {
+        return n1 + n2;
+      }
+
+      function calcular(n1, n2, operador) {
+        switch (operador) {
+          case "-":
+            return n1 - n2;
+          case "+":
+            return n1 + n2;
+          case "*":
+            return n1 * n2;
+          case "/":
+            return n1 / n2;
+        }
+        return "Operador inválido!";
+      }
+
+      function isOdd(n1){
+        return n1 % 2 === 0
+      }
+
+      console.log(somar(2, 2));
+      console.log(calcular(2, 3, "*"));
+      console.log(isOdd(2))
+      console.log(isOdd(3))
+    </script>
+  </body>
+</html>

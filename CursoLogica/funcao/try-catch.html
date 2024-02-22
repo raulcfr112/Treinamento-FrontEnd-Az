@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TryCatch</title>
+  </head>
+  <body>
+    <h1>Try... Catch</h1>
+    <div id="output"></div>
+
+    <script>
+      let obj = { nome: "Daniel", email: "daniel@server.com" };
+
+      try {
+        document.getElementById(
+          "output"
+        ).innerHTML = `Nome: ${obj.nome} - Email: ${obj.email}`;
+      } catch (e) {
+        console.log(e);
+      }
+    </script>
+
+    <script src="areas.js"></script>
+
+    <script>
+      try {
+        console.log(calcularAreaRetangulo(2, 5));
+      } catch (e) {
+        alert("Deu ruim! " + e);
+      }
+
+      try {
+        let areaTriangulo = calcularAreaRetangulo(3, 5);
+        document.getElementById(
+          "output"
+        ).innerHTML = `A area do triangulo é ${areaTriangulo}`;
+      } catch (e) {
+        console.log(e);
+      }
+
+      try {
+        let areaCirculo = calcularAreaCirculo(5);
+        document.getElementById(
+          "output"
+        ).innerHTML = `A area do circulo é ${areaCirculo}`;
+      } catch (e) {
+        console.log(e);
+      }
+    </script>
+  </body>
+</html>

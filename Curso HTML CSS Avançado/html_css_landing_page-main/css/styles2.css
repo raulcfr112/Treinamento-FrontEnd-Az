@@ -1,0 +1,363 @@
+:root {
+  --primary: #00baf2;
+  --secondary: #95989a;
+  --text-color: #fff;
+  --text-secondary: #000;
+  --text-tertiary: #5d5d5d;
+  font-family: "Montserrat";
+}
+
+html,
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+img {
+  width: 200px;
+}
+
+/* event-subscription */
+
+#event-subscription {
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 0;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 85vh;
+  gap: 6em;
+  background: url(/img/hrz-5.jpg), rgba(0, 0, 0, 0.7);
+  background-blend-mode: overlay;
+  background-size: cover;
+  background-position: center;
+  color: var(--text-color);
+}
+
+/* disclaimer */
+
+#disclaimer {
+  text-align: left;
+  width: 40%;
+}
+
+#disclaimer p {
+  font-size: 1.2em;
+}
+
+#disclaimer h2,
+.event-date {
+  color: var(--primary);
+}
+
+#disclaimer h2 {
+  font-size: 3em;
+  font-weight: 600;
+  margin-bottom: 1em;
+}
+
+#disclaimer .about-event {
+  font-size: 2em;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 1em;
+}
+
+.event-date {
+  margin-top: 0.3em;
+  font-weight: bold;
+}
+
+/* subscription-form */
+
+#subscription-form {
+  background-color: var(--secondary);
+  width: 30%;
+  height: fit-content;
+  padding: 1.5em;
+  box-sizing: border-box;
+  color: var(--text-secondary);
+  font-size: 1.5em;
+}
+
+#subscription-form p {
+  margin-bottom: 1em;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0.5em;
+}
+
+.form-group label {
+  color: var(--text-tertiary);
+  font-weight: bold;
+  font-size: 1rem;
+  margin-bottom: 0.3em;
+}
+
+.form-group input {
+  padding: 0.5em;
+  border-radius: 5px;
+  border: none;
+}
+
+.form-group select {
+  padding: 0.5em;
+  border: none;
+  border-radius: 5px;
+}
+
+form input[type="submit"] {
+  width: 100%;
+  padding: 1em;
+  background-color: var(--primary);
+  color: white;
+  border: none;
+  text-transform: uppercase;
+  opacity: 0.8;
+}
+
+form input[type="submit"]:hover {
+  background-color: var(--primary);
+  opacity: 1;
+  cursor: pointer;
+}
+
+/* key-benefits */
+
+#key-benefits h2 {
+  text-align: center;
+  background-color: var(--secondary);
+  padding: 2em;
+  font-weight: 500;
+  font-size: 24px;
+}
+
+.benefits {
+  display: flex;
+  margin: 3em auto;
+  flex: 1 1 0;
+  width: 90vw;
+}
+
+.benefit-img {
+  width: 250px;
+  height: 250px;
+  background-position: center;
+  background-size: cover;
+  border-radius: 50%;
+}
+
+.benefit {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#benefit-1 {
+  background-image: url(/img/sqr-1.jpg);
+}
+
+#benefit-2 {
+  background-image: url(/img/sqr-2.jpg);
+}
+
+#benefit-3 {
+  background-image: url(/img/sqr-3.jpg);
+}
+
+.benefit p {
+  margin-top: 1em;
+  text-align: center;
+  color: var(--text-tertiary);
+  width: 50%;
+}
+
+/* location */
+
+#location {
+  display: flex;
+  color: white;
+  align-items: center;
+  margin: 0 auto;
+  flex: 1 1 0;
+  background: url(/img/hrz-1.jpg), rgba(0, 0, 0, 0.8);
+  background-blend-mode: overlay;
+  background-position: center;
+  background-size: cover;
+  height: 60vh;
+  gap: 5em;
+  font-size: 16px;
+}
+
+#address {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  gap: 1.5em;
+}
+
+#address i {
+  font-size: 64px;
+  color: var(--primary);
+}
+
+#address-details {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  line-height: 1.5;
+}
+
+#about-location {
+  width: 30%;
+}
+
+#about-location h3 {
+  color: var(--primary);
+  font-size: 40px;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 1em;
+}
+
+#about-location p {
+  line-height: 1.5;
+}
+
+/* details */
+
+#details {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 80vw;
+  margin: 3em auto;
+}
+
+.detail {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 3.5em;
+}
+
+.detail img {
+  flex: 1 1 0;
+}
+
+.detail-description {
+  flex: 1 1 0;
+  margin: auto 0;
+}
+
+#detail-1 .detail-description h3 {
+  font-size: 3em;
+  font-weight: 700;
+  padding-left: 4rem;
+  box-sizing: border-box;
+}
+
+.detail-description #detail-1 h3 {
+  font-size: 48px;
+  font-weight: bold;
+  text-align: left;
+}
+
+#detail-2 h3,
+#detail-3 h3 {
+  font-size: 32px;
+  font-weight: 500;
+  margin-bottom: 1em;
+}
+
+#detail-3 .detail-description ul,
+#detail-3 .detail-description h3,
+#detail-2 .detail-description h3,
+#detail-2 .detail-description ul {
+  margin-left: 2rem;
+}
+
+.detail-description ul li:last-child {
+  font-weight: bold;
+}
+.detail-description ul {
+  list-style: disc;
+  list-style-position: inside;
+}
+
+.detail-description ul li {
+  margin: 0.5em;
+}
+
+/* cta */
+
+#cta {
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+  width: 100%;
+  height: 45vh;
+  background: url(/img/hrz-6.jpg), rgba(0, 0, 0, 0.8);
+  background-blend-mode: overlay;
+  background-position: center;
+  background-size: cover;
+}
+
+#cta h3 {
+  text-align: center;
+  margin-bottom: 1.2em;
+  font-size: 2em;
+  font-weight: 500;
+}
+
+#cta .btn {
+  width: 32%;
+  margin: 0 auto;
+  padding: 1em 2em;
+  text-transform: uppercase;
+  background-color: var(--primary);
+  border: none;
+  cursor: pointer;
+  color: white;
+  font-size: 1.2em;
+  font-weight: 600;
+  opacity: 0.8;
+}
+
+#cta .btn:hover {
+  opacity: 1;
+}
+
+/* footer */
+
+#footer {
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  gap: 1em;
+  color: var(--text-tertiary);
+}
+
+#footer h3 {
+  font-size: 1.8em;
+  font-weight: bold;
+}
+
+#footer p {
+  font-size: 1.2em;
+}
+
+#footer span {
+  font-weight: bold;
+}

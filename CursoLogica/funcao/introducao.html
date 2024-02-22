@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Função</title>
+  </head>
+  <body>
+    <h1>Função</h1>
+    <input type="number" id="number" />
+    <button onclick="mostrarTabuada()">Mostrar tabuada</button>
+    <button onclick="limparTabuada()">Limpar Tabuada</button>
+
+    <div id="tabuada"></div>
+
+    <script>
+      const input = document.getElementById("number");
+      const tabuada = document.getElementById("tabuada");
+      
+      function mostrarTabuada() {
+        limparTabuada()
+        const inputValue = parseFloat(input.value);
+        if (!isNaN(inputValue)) {
+          for (let i = 1; i <= 100; i++) {
+            textTabuada +=
+              inputValue + " x " + i + " = " + inputValue * i + "<br>";
+            if (i % 10 == 0) {
+                textTabuada += "<br>";
+            }
+          }
+        }
+        tabuada.innerHTML = textTabuada
+      }
+
+      function limparTabuada(){
+        textTabuada = ""
+        tabuada.innerHTML = ""
+      }
+    </script>
+  </body>
+</html>

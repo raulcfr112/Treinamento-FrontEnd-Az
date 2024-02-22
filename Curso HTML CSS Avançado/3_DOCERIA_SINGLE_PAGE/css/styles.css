@@ -1,0 +1,159 @@
+html {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: #373a3c;
+  width: 100vw;
+  height: 100vh;
+}
+
+#sidebar {
+  background-color: #006599;
+  position: fixed;
+  width: 300px;
+  height: 100vh;
+}
+
+.content {
+  position: absolute;
+  left: 300px;
+  width: calc(100% - 300px);
+}
+
+.banner {
+  background-image: url(/img/banner2.jpg);
+  width: 100%;
+  height: calc(100vh - 150px);
+  background-size: cover;
+}
+
+.sidebar-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  padding-top: 30px;
+  gap: 1em;
+}
+
+.sidebar-container h1 {
+  font-size: 30px;
+}
+
+.logo-doceria {
+  width: 60px;
+  height: 60px;
+}
+
+ul li a {
+  text-decoration: none;
+  color: inherit;
+}
+ul {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  padding-top: 1em;
+  font-size: large;
+}
+
+.sessao-bemvindo-content {
+  padding: 0 3em;
+  height: calc(100vh - 100px);
+  position: relative;
+}
+
+.sessao-bemvindo-content h1 {
+  color: #006599;
+  font-size: 50px;
+  padding: 1em 0;
+}
+
+.sessao-descricao p {
+  padding: 0.5em 0;
+  color: #373a3c;
+  line-height: 2rem;
+}
+
+.sessao-bemvindo-btn {
+  background-color: #006599;
+  padding: 1em 3em;
+  color: white;
+  text-decoration: none;
+  margin-left: 1em;
+  margin-top: 1em;
+  position: relative;
+  display: inline-block;
+}
+
+.sessao-minibanner {
+  background-image: url(/img/banner3.jpg);
+  width: 26%;
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  display: block;
+}
+
+.sessao-descricao {
+  margin-left: 300px;
+}
+
+#sessao-contato {
+  position: relative;
+  padding: 0 3em;
+}
+
+#sessao-contato {
+  display: flex;
+  flex-direction: column;
+  justify-content: right;
+}
+
+#sessao-contato h2 {
+  color: #006599;
+  font-size: 35px;
+  padding: 1em 0;
+}
+
+#form-contato {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  gap: 0.5em;
+}
+
+input {
+  padding: 1em;
+}
+
+input::placeholder {
+  color: #006599;
+}
+
+textarea {
+  resize: none;
+  height: 200px;
+  padding: 1em;
+}
+
+textarea::placeholder {
+  color: #006599;
+}
+
+.btn-submit {
+  background-color: #006599;
+  border: none;
+  color: white;
+  display: inline-block;
+  width: 35%;
+  font-size: 1em;
+}
+
+footer {
+  text-align: center;
+  margin: 2em;
+  padding: 2em;
+  color: #006599;
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM</title>
+  </head>
+  <body>
+    <h1 id="titulo">Titulo qualquer</h1>
+    <p id="paragrafo">
+      este é apenas um parágrafo contendo um <i> texto em italico qualquer</i>
+    </p>
+
+    <hr />
+
+    <input type="text" id="user" value="valor preenchido" />
+
+    <hr />
+
+    <h2>Lista de tarefas</h2>
+    <ol id="listaTarefas">
+      <li>Aprender CSS</li>
+      <li>Aprender JS</li>
+      <li>Aprender DOM profundamente</li>
+      <li>Criar algo</li>
+    </ol>
+
+    <script>
+      document.getElementById("titulo").textContent = "Titulo alterado 2";
+
+      const lista = document.getElementById("listaTarefas");
+      let novaTarefa = "Aplica á vagas de emprego";
+
+      lista.innerHTML += "<li>" + novaTarefa + "</li>"
+
+    </script>
+  </body>
+</html>
