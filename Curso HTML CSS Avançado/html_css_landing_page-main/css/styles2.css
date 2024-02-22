@@ -361,3 +361,99 @@ form input[type="submit"]:hover {
 #footer span {
   font-weight: bold;
 }
+
+/* mobile */
+
+@media screen and (max-width: 450px) {
+
+  /* header */
+  #event-subscription {
+    flex-direction: column;
+    height: fit-content;
+    padding-top: 2em;
+    padding-bottom: 2em;
+  }
+
+  #disclaimer {
+    width: 90%;
+  }
+
+  #subscription-form {
+    width: 90%;
+  }
+
+  /* key benefits */
+
+  #key-benefits .benefits {
+    flex-direction: column;
+    gap: 2em;
+  }
+
+  /* location */
+
+  #location {
+    flex-direction: column-reverse;
+    text-align: center;
+    justify-content: center;
+    gap: 0.5em;
+    padding: 1em;
+  }
+
+  #address {
+    flex-direction: column;
+  }
+
+  #about-location {
+    width: 60%;
+  }
+
+  #about-location h3 {
+    margin-bottom: 2rem;
+  }
+
+  #about-location p {
+    display: none;
+  }
+
+  /* details */
+
+  .detail {
+    flex-direction: column;
+    margin-bottom: 3em;
+  }
+
+  #details {
+    margin-bottom: 0;
+  }
+
+  .detail img {
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  #detail-1 img {
+    display: none;
+  }
+
+  #detail-1 .detail-description h3 {
+    padding: 0;
+  }
+
+  #detail-3 .detail-description ul,
+  #detail-3 .detail-description h3,
+  #detail-2 .detail-description h3,
+  #detail-2 .detail-description ul {
+    margin: 0 0 2rem 0;
+  }
+
+  #detail-3 {
+    flex-direction: column-reverse;
+  }
+
+  /* cta */
+
+  #cta .btn{
+    width: 80%;
+    padding: .8em 0;
+  }
+}
