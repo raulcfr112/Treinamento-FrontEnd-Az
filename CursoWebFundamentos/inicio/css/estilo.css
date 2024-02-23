@@ -54,7 +54,7 @@ a:hover{
     border-radius: .5rem;
 }
 .section__top{
-    background-image: url(/imagens/topo.jpg);
+    background-image: url(../imagens/topo.jpg);
     background-repeat: no-repeat;
     width: 100%;
     background-attachment:local;
@@ -89,7 +89,7 @@ a:hover{
 }
 .section__bottom{
     background-color: #003d52;
-    background-image: url(/imagens/bg_detalhe.png);
+    background-image: url(../imagens/bg_detalhe.png);
     height: 60vh;
     background-repeat: no-repeat;
     background-position: bottom right;
