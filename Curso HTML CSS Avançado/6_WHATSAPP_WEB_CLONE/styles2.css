@@ -189,7 +189,7 @@ body,
 }
 
 .messages-container .bg-image {
-    background-image: url(/img/background_whats.png);
+    background-image: url(img/background_whats.png);
   width: 100%;
   height: 100%;
   opacity: 0.06;

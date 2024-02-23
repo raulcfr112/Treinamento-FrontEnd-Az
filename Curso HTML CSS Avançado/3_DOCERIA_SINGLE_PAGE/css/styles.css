@@ -20,7 +20,7 @@ html {
 }
 
 .banner {
-  background-image: url(/img/banner2.jpg);
+  background-image: url(../img/banner2.jpg);
   width: 100%;
   height: calc(100vh - 150px);
   background-size: cover;
@@ -57,10 +57,12 @@ ul {
   font-size: large;
 }
 
+#sessao-bemvindo{
+  position: relative;
+}
+
 .sessao-bemvindo-content {
   padding: 0 3em;
-  height: calc(100vh - 100px);
-  position: relative;
 }
 
 .sessao-bemvindo-content h1 {
@@ -87,9 +89,9 @@ ul {
 }
 
 .sessao-minibanner {
-  background-image: url(/img/banner3.jpg);
+  background-image: url(../img/banner3.jpg);
   width: 26%;
-  height: 400px;
+  height: 24%;
   background-size: cover;
   background-position: center;
   position: absolute;
@@ -97,7 +99,8 @@ ul {
 }
 
 .sessao-descricao {
-  margin-left: 300px;
+  margin-left: 30%;
+  margin-bottom: 5%;
 }
 
 #sessao-contato {

@@ -29,7 +29,7 @@ img {
   width: 100%;
   height: 85vh;
   gap: 6em;
-  background: url(/img/hrz-5.jpg), rgba(0, 0, 0, 0.7);
+  background: url(../img/hrz-5.jpg), rgba(0, 0, 0, 0.7);
   background-blend-mode: overlay;
   background-size: cover;
   background-position: center;
@@ -160,15 +160,15 @@ form input[type="submit"]:hover {
 }
 
 #benefit-1 {
-  background-image: url(/img/sqr-1.jpg);
+  background-image: url(../img/sqr-1.jpg);
 }
 
 #benefit-2 {
-  background-image: url(/img/sqr-2.jpg);
+  background-image: url(../img/sqr-2.jpg);
 }
 
 #benefit-3 {
-  background-image: url(/img/sqr-3.jpg);
+  background-image: url(../img/sqr-3.jpg);
 }
 
 .benefit p {
@@ -186,7 +186,7 @@ form input[type="submit"]:hover {
   align-items: center;
   margin: 0 auto;
   flex: 1 1 0;
-  background: url(/img/hrz-1.jpg), rgba(0, 0, 0, 0.8);
+  background: url(../img/hrz-1.jpg), rgba(0, 0, 0, 0.8);
   background-blend-mode: overlay;
   background-position: center;
   background-size: cover;
@@ -306,7 +306,7 @@ form input[type="submit"]:hover {
   color: white;
   width: 100%;
   height: 45vh;
-  background: url(/img/hrz-6.jpg), rgba(0, 0, 0, 0.8);
+  background: url(../img/hrz-6.jpg), rgba(0, 0, 0, 0.8);
   background-blend-mode: overlay;
   background-position: center;
   background-size: cover;
@@ -365,7 +365,6 @@ form input[type="submit"]:hover {
 /* mobile */
 
 @media screen and (max-width: 450px) {
-
   /* header */
   #event-subscription {
     flex-direction: column;
@@ -452,8 +451,8 @@ form input[type="submit"]:hover {
 
   /* cta */
 
-  #cta .btn{
+  #cta .btn {
     width: 80%;
-    padding: .8em 0;
+    padding: 0.8em 0;
   }
 }
